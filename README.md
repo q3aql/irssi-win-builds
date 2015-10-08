@@ -41,12 +41,12 @@ Irssi builds for Windows
   * Download [irssi-0.8.17.tar.bz2](https://github.com/clamsawd/irssi-win/releases/download/v0.8.17/irssi-0.8.17.tar.bz2) and save it to `C:\Cygwin\home\<User>\`.
   * Open a Cygwin terminal, and run the following commands:
 
-    * `$ tar xzvf irssi-*.tar.gz`
-    * `$ cd ./irssi-*`
-    * `$ ./configure --with-proxy --with-perl-staticlib --prefix=/usr/ (with perl support)`
-    * `$ ./configure --with-proxy --with-perl=no --prefix=/usr/ (without perl support)`
+    * `$ tar jzvf irssi-0.8.17.tar.bz2`
+    * `$ cd irssi-0.8.17`
+    * `$ ./configure --with-proxy --with-perl=no --prefix=/usr`
     * `$ make`
     * `$ make install`
+    * `$ irssi`
 
 ### External links:
 
