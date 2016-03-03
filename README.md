@@ -1,15 +1,15 @@
 Irssi builds for Windows
 ========================
 
-### Irssi 0.8.17 builds (without perl):
+### Irssi 0.8.18 builds (without perl):
 
   * **Windows downloads:**
-    * [irssi-0.8.17-win-32bit-build1.7z](https://github.com/clamsawd/irssi-win/releases/download/v0.8.17/irssi-0.8.17-win-32bit-build1.7z)
-    * [irssi-0.8.17-win-64bit-build1.7z](https://github.com/clamsawd/irssi-win/releases/download/v0.8.17/irssi-0.8.17-win-64bit-build1.7z)
+    * [irssi-0.8.18-win-32bit-build1.7z](https://github.com/q3aql/irssi-win/releases/download/v0.8.18/irssi-0.8.18-win-32bit-build1.7z)
+    * [irssi-0.8.18-win-64bit-build1.7z](https://github.com/q3aql/irssi-win/releases/download/v0.8.18/irssi-0.8.18-win-64bit-build1.7z)
   
   * **Source code:**
-    * [irssi-0.8.17.tar.bz2](https://github.com/clamsawd/irssi-win/releases/download/v0.8.17/irssi-0.8.17.tar.bz2)
-    * [irssi-0.8.17.tar.gz](https://github.com/clamsawd/irssi-win/releases/download/v0.8.17/irssi-0.8.17.tar.gz)
+    * [irssi-0.8.18.tar.xz](https://github.com/q3aql/irssi-win/releases/download/v0.8.18/irssi-0.8.18.tar.xz)
+    * [irssi-0.8.18.tar.gz](https://github.com/q3aql/irssi-win/releases/download/v0.8.18/irssi-0.8.18.tar.gz)
 
 ### How to use:
 
@@ -38,11 +38,11 @@ Irssi builds for Windows
     * `Libs/openssl`
     * `Libs/openssl-devel`
 
-  * Download [irssi-0.8.17.tar.bz2](https://github.com/clamsawd/irssi-win/releases/download/v0.8.17/irssi-0.8.17.tar.bz2) and save it to `C:\Cygwin\home\<User>\`.
+  * Download [irssi-0.8.18.tar.gz](https://github.com/q3aql/irssi-win/releases/download/v0.8.18/irssi-0.8.18.tar.gz) and save it to `C:\Cygwin\home\<User>\`.
   * Open a Cygwin terminal, and run the following commands:
 
-    * `$ tar jzvf irssi-0.8.17.tar.bz2`
-    * `$ cd irssi-0.8.17`
+    * `$ tar zxvf irssi-0.8.18.tar.gz`
+    * `$ cd irssi-0.8.18`
     * `$ ./configure --with-proxy --with-perl=no --prefix=/usr`
     * `$ make`
     * `$ make install`
