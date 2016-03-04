@@ -12,7 +12,7 @@ info_eol = "false";
 
 # these characters are automatically replaced with specified color
 # (dark grey by default)
-replaces = { "[]=" = "%K$*%n"; };
+replaces = { "[]=" = "%k$*%n"; };
 
 abstracts = {
   ##
@@ -57,11 +57,11 @@ abstracts = {
   ##
 
   # highlighted nick/host is printed (joins)
-  channick_hilight = "%C$*%n";
-  chanhost_hilight = "{nickhost %C$*%n}";
+  channick_hilight = "%c$*%n";
+  chanhost_hilight = "{nickhost %c$*%n}";
 
   # nick/host is printed (parts, quits, etc.)
-  channick = "%C$*%n";
+  channick = "%c$*%n";
   chanhost = "{nickhost $*}";
 
   # highlighted channel name is printed
@@ -87,11 +87,11 @@ abstracts = {
   #  ownmsgnick = "%y{msgnick $0 $1-%y}%n";
   #  (you'll also have to remove <> from replaces list above)
   # Example2.2: But you still want to keep <> grey for other messages:
-  #  pubmsgnick = "%K{msgnick $0 $1-%K}%n";
-  #  pubmsgmenick = "%K{msgnick $0 $1-%K}%n";
-  #  pubmsghinick = "%K{msgnick $1 $0$2-%n%K}%n";
-  #  ownprivmsgnick = "%K{msgnick  $*%K}%n";
-  #  privmsgnick = "%K{msgnick  %r$*%K}%n";
+  #  pubmsgnick = "%k{msgnick $0 $1-%k}%n";
+  #  pubmsgmenick = "%k{msgnick $0 $1-%k}%n";
+  #  pubmsghinick = "%k{msgnick $1 $0$2-%n%k}%n";
+  #  ownprivmsgnick = "%k{msgnick  $*%k}%n";
+  #  privmsgnick = "%k{msgnick  %r$*%k}%n";
 
   # $0 = nick mode, $1 = nick
   ownmsgnick = "{msgnick $0 $1-}";
@@ -139,7 +139,7 @@ abstracts = {
   ownaction = "{action $*}";
 
   # own action with target, both private/public
-  ownaction_target = "{action_core $0}%K:%c$1%n ";
+  ownaction_target = "{action_core $0}%k:%c$1%n ";
 
   # private action sent by others
   pvtaction = "%_ (*) $*%n ";
@@ -157,14 +157,14 @@ abstracts = {
   whois = "%# $[8]0 : $1-";
 
   # notices
-  ownnotice = "[%r$0%K(%r$1-%K)]%n ";
-  notice = "%K-%M$*%K-%n ";
-  pubnotice_channel = "%K:%m$*";
-  pvtnotice_host = "%K(%m$*%K)";
+  ownnotice = "[%r$0%k(%r$1-%k)]%n ";
+  notice = "%k-%M$*%k-%n ";
+  pubnotice_channel = "%k:%m$*";
+  pvtnotice_host = "%k(%m$*%k)";
   servernotice = "%g!$*%n ";
 
   # CTCPs
-  ownctcp = "[%r$0%K(%r$1-%K)] ";
+  ownctcp = "[%r$0%k(%r$1-%k)] ";
   ctcp = "%g$*%n";
 
   # wallops
@@ -174,7 +174,7 @@ abstracts = {
 
   # netsplits
   netsplit = "%r$*%n";
-  netjoin = "%C$*%n";
+  netjoin = "%c$*%n";
 
   # /names list
   names_prefix = "";
@@ -190,14 +190,14 @@ abstracts = {
   dccfile = "%_$*%_";
 
   # DCC chat, own msg/action
-  dccownmsg = "[%r$0%K($1-%K)%n] ";
+  dccownmsg = "[%r$0%k($1-%k)%n] ";
   dccownnick = "%r$*%n";
   dccownquerynick = "%_$*%n";
   dccownaction = "{action $*}";
-  dccownaction_target = "{action_core $0}%K:%c$1%n ";
+  dccownaction_target = "{action_core $0}%k:%c$1%n ";
 
   # DCC chat, others
-  dccmsg = "[%g$1-%K(%g$0%K)%n] ";
+  dccmsg = "[%g$1-%k(%g$0%k)%n] ";
   dccquerynick = "%g$*%n";
   dccaction = "%_ (*dcc*) $*%n %|";
 
