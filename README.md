@@ -4,12 +4,12 @@ Irssi builds for Windows
 ### Irssi 0.8.18 builds (without perl):
 
   * **Windows downloads:**
-    * [irssi-0.8.18-win-32bit-build1.7z](https://github.com/q3aql/irssi-win/releases/download/v0.8.18/irssi-0.8.18-win-32bit-build1.7z)
-    * [irssi-0.8.18-win-64bit-build1.7z](https://github.com/q3aql/irssi-win/releases/download/v0.8.18/irssi-0.8.18-win-64bit-build1.7z)
+    * [irssi-0.8.18-win-32bit-build2.7z](https://github.com/q3aql/irssi-win/releases/download/v0.8.18_2/irssi-0.8.18-win-32bit-build2.7z)
+    * [irssi-0.8.18-win-64bit-build2.7z](https://github.com/q3aql/irssi-win/releases/download/v0.8.18_2/irssi-0.8.18-win-64bit-build2.7z)
   
   * **Source code:**
-    * [irssi-0.8.18.tar.xz](https://github.com/q3aql/irssi-win/releases/download/v0.8.18/irssi-0.8.18.tar.xz)
-    * [irssi-0.8.18.tar.gz](https://github.com/q3aql/irssi-win/releases/download/v0.8.18/irssi-0.8.18.tar.gz)
+    * [irssi-0.8.18.tar.xz](https://github.com/q3aql/irssi-win/releases/download/v0.8.18_2/irssi-0.8.18.tar.xz)
+    * [irssi-0.8.18.tar.gz](https://github.com/q3aql/irssi-win/releases/download/v0.8.18_2/irssi-0.8.18.tar.gz)
 
 ### How to use:
 
@@ -19,7 +19,7 @@ Irssi builds for Windows
     * Copy the folder `irssi` to system. For example: `C:\Program Files\irssi`.
     * (_**Optional**_) Add the folder to [PATH](https://www.google.es/search?q=add+folder+to+PATH+on+Windows) variable.
     * Open the folder `irssi`.
-    * Run the script `irssi.cmd` or `irssi-with-term.vbs`.
+    * Run the script `irssi.cmd`.
 
 ### How to build irssi on Cygwin
 
@@ -38,7 +38,7 @@ Irssi builds for Windows
     * `Libs/openssl`
     * `Libs/openssl-devel`
 
-  * Download [irssi-0.8.18.tar.gz](https://github.com/q3aql/irssi-win/releases/download/v0.8.18/irssi-0.8.18.tar.gz) and save it to `C:\Cygwin\home\<User>\`.
+  * Download [irssi-0.8.18.tar.gz](https://github.com/q3aql/irssi-win/releases/download/v0.8.18_2/irssi-0.8.18.tar.gz) and save it to `C:\Cygwin\home\<User>\`.
   * Open a Cygwin terminal, and run the following commands:
 
     * `$ tar zxvf irssi-0.8.18.tar.gz`
