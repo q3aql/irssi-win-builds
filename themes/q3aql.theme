@@ -12,7 +12,7 @@ info_eol = "false";
 
 # these characters are automatically replaced with specified color
 # (dark grey by default)
-replaces = { "[]=" = "%k$*%n"; };
+replaces = { "[]=" = "%w$*%n"; };
 
 abstracts = {
   ##
@@ -20,7 +20,7 @@ abstracts = {
   ##
 
   # text to insert at the beginning of each non-message line
-  line_start = "%w-%n!%w-%n ";
+  line_start = "%w-%w!%w-%n ";
 
   # timestamp styling, nothing by default
   timestamp = "%w(%y$*%w)%n";
@@ -32,7 +32,7 @@ abstracts = {
   error = "%r$*%n";
 
   # channel name is printed
-  channel = "%_$*%_";
+  channel = "%g$0-%n";
 
   # nick is printed
   nick = "%g$0-%n";
