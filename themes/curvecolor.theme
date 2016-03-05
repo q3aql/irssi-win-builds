@@ -88,11 +88,11 @@ abstracts = {
   #  ownmsgnick = "%y{msgnick $0 $1-%y}%n";
   #  (you'll also have to remove <> from replaces list above)
   # Example2.2: But you still want to keep <> grey for other messages:
-  #  pubmsgnick = "%k{msgnick $0 $1-%k}%n";
-  #  pubmsgmenick = "%k{msgnick $0 $1-%k}%n";
-  #  pubmsghinick = "%k{msgnick $1 $0$2-%n%k}%n";
-  #  ownprivmsgnick = "%k{msgnick  $*%k}%n";
-  #  privmsgnick = "%k{msgnick  %r$*%k}%n";
+  #  pubmsgnick = "%w{msgnick $0 $1-%w}%n";
+  #  pubmsgmenick = "%w{msgnick $0 $1-%w}%n";
+  #  pubmsghinick = "%w{msgnick $1 $0$2-%n%w}%n";
+  #  ownprivmsgnick = "%w{msgnick  $*%w}%n";
+  #  privmsgnick = "%w{msgnick  %r$*%w}%n";
 
   # $0 = nick mode, $1 = nick
   ownmsgnick = "{msgnick $0 $1-}";
@@ -140,7 +140,7 @@ abstracts = {
   ownaction = "{action $*}";
 
   # own action with target, both private/public
-  ownaction_target = "{action_core $0}%k:%c$1%n ";
+  ownaction_target = "{action_core $0}%w:%c$1%n ";
 
   # private action sent by others
   pvtaction = "%_ (*) $*%n ";
@@ -158,14 +158,14 @@ abstracts = {
   whois = "%# $[8]0 : $1-";
 
   # notices
-  ownnotice = "[%r$0%k(%r$1-%k)]%n ";
-  notice = "%k-%M$*%k-%n ";
-  pubnotice_channel = "%k:%m$*";
-  pvtnotice_host = "%k(%m$*%k)";
+  ownnotice = "[%r$0%w(%r$1-%w)]%n ";
+  notice = "%w-%M$*%w-%n ";
+  pubnotice_channel = "%w:%m$*";
+  pvtnotice_host = "%w(%m$*%w)";
   servernotice = "%g!$*%n ";
 
   # CTCPs
-  ownctcp = "[%r$0%k(%r$1-%k)] ";
+  ownctcp = "[%r$0%w(%r$1-%w)] ";
   ctcp = "%g$*%n";
 
   # wallops
@@ -191,14 +191,14 @@ abstracts = {
   dccfile = "%_$*%_";
 
   # DCC chat, own msg/action
-  dccownmsg = "[%r$0%k($1-%k)%n] ";
+  dccownmsg = "[%r$0%w($1-%w)%n] ";
   dccownnick = "%r$*%n";
   dccownquerynick = "%_$*%n";
   dccownaction = "{action $*}";
-  dccownaction_target = "{action_core $0}%k:%c$1%n ";
+  dccownaction_target = "{action_core $0}%w:%c$1%n ";
 
   # DCC chat, others
-  dccmsg = "[%g$1-%k(%g$0%k)%n] ";
+  dccmsg = "[%g$1-%w(%g$0%w)%n] ";
   dccquerynick = "%g$*%n";
   dccaction = "%_ (*dcc*) $*%n %|";
 
