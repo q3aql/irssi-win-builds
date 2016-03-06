@@ -208,7 +208,7 @@ abstracts = {
 
   # default background for all statusbars. You can also give
   # the default foreground color for statusbar items.
-  sb_background = "%B";
+  sb_background = "%4%w";
 
   # default backround for "default" statusbar group
   #sb_default_bg = "%4";
@@ -246,7 +246,7 @@ abstracts = {
   # public message
   sb_act_msg = "%W$*";
   # hilight
-  sb_act_hilight = "%W$*";
+  sb_act_hilight = "%G$*";
   # hilight with specified color, $0 = color, $1 = text
   sb_act_hilight_color = "$0$1-%n";
 };
