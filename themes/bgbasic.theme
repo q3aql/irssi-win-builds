@@ -160,8 +160,8 @@ abstracts = {
   # notices
   ownnotice = "[%g$0%w(%g$1-%w)]%n ";
   notice = "%w-%g$*%w-%n ";
-  pubnotice_channel = "%w:%m$*";
-  pvtnotice_host = "%w(%g$*%K)";
+  pubnotice_channel = "%w:%g$*";
+  pvtnotice_host = "%w(%g$*%w)";
   servernotice = "%g!$*%n ";
 
   # CTCPs
