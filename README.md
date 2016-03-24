@@ -43,7 +43,7 @@ Irssi builds for Windows
 
     * `$ tar zxvf irssi-0.8.19.tar.gz`
     * `$ cd irssi-0.8.19`
-    * `$ ./configure --with-proxy --with-perl=no --prefix=/usr`
+    * `$ ./configure --with-proxy --with-bot --with-perl=no --prefix=/usr --enable-true-color`
     * `$ make`
     * `$ make install`
     * `$ irssi`
