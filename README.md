@@ -1,15 +1,15 @@
 Irssi builds for Windows
 ========================
 
-### Irssi 1.0.0 builds (without perl):
+### Irssi 1.0.2 builds (without perl):
 
   * **Windows downloads:**
-    * [irssi-1.0.0-win-32bit-build1.7z](https://github.com/q3aql/irssi-win/releases/download/v1.0.0/irssi-1.0.0-win-32bit-build1.7z)
-    * [irssi-1.0.0-win-64bit-build1.7z](https://github.com/q3aql/irssi-win/releases/download/v1.0.0/irssi-1.0.0-win-64bit-build1.7z)
+    * [irssi-1.0.2-win-32bit-build1.7z](https://github.com/q3aql/irssi-win/releases/download/v1.0.2/irssi-1.0.2-win-32bit-build1.7z)
+    * [irssi-1.0.2-win-64bit-build1.7z](https://github.com/q3aql/irssi-win/releases/download/v1.0.2/irssi-1.0.2-win-64bit-build1.7z)
 
   * **Source code:**
-    * [irssi-1.0.0.tar.xz](https://github.com/q3aql/irssi-win/releases/download/v1.0.0/irssi-1.0.0.tar.xz)
-    * [irssi-1.0.0.tar.gz](https://github.com/q3aql/irssi-win/releases/download/v1.0.0/irssi-1.0.0.tar.gz)
+    * [irssi-1.0.2.tar.xz](https://github.com/q3aql/irssi-win/releases/download/v1.0.2/irssi-1.0.2.tar.xz)
+    * [irssi-1.0.2.tar.gz](https://github.com/q3aql/irssi-win/releases/download/v1.0.2/irssi-1.0.2.tar.gz)
 
 ### How to use:
 
@@ -38,11 +38,11 @@ Irssi builds for Windows
     * `Libs/openssl`
     * `Libs/openssl-devel`
 
-  * Download [irssi-1.0.0.tar.gz](https://github.com/q3aql/irssi-win/releases/download/v1.0.0/irssi-1.0.0.tar.gz) and save it to `C:\Cygwin\home\<User>\`.
+  * Download [irssi-1.0.2.tar.gz](https://github.com/q3aql/irssi-win/releases/download/v1.0.0/irssi-1.0.2.tar.gz) and save it to `C:\Cygwin\home\<User>\`.
   * Open a Cygwin terminal, and run the following commands:
 
-    * `$ tar zxvf irssi-1.0.0.tar.gz`
-    * `$ cd irssi-1.0.0`
+    * `$ tar zxvf irssi-1.0.2.tar.gz`
+    * `$ cd irssi-1.0.2`
     * `$ ./configure --with-proxy --with-bot --with-perl=no --prefix=/usr --enable-true-color`
     * `$ make`
     * `$ make install`
