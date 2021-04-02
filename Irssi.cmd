@@ -9,4 +9,5 @@ set CONFIG_FILE=/home/%USERNAME%/Irssi
 
 set TERMINFO_DIRS=terminfo
 copy /Y prompt\.minttyrc home\%USERNAME%
+copy /Y themes\* home\%USERNAME%\Irssi
 bin\mintty.exe -t Irssi -i icon/Irssi.ico -e bin\irssi.exe --home=%CONFIG_FILE%
