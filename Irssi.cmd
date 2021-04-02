@@ -8,4 +8,4 @@ IF NOT EXIST home\%USERNAME%\Irssi mkdir home\%USERNAME%\Irssi
 set CONFIG_FILE=/home/%USERNAME%/Irssi
 
 set TERMINFO_DIRS=terminfo
-bin\mintty.exe -t irssi -i irssi.ico -e bin\irssi.exe --home=%CONFIG_FILE%
+bin\mintty.exe -t Irssi -i icon/Irssi.ico -e bin\irssi.exe --home=%CONFIG_FILE%
