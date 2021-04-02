@@ -1,0 +1,19 @@
+#!/bin/bash
+
+cp -rfv /usr/bin/irssi.exe ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/botti.exe ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/mintty.exe ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cygwin-console-helper.exe ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cygz.dll ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cygwin1.dll ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cyggmodule-2.0-0.dll ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cygcrypto-1.1.dll ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cygncursesw-10.dll ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cygglib-2.0-0.dll ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cygssl-1.1.dll ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cyggcc_s-1.dll ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cygiconv-2.dll ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cygintl-8.dll ${HOME}/Irssi/bin/
+cp -rfv /usr/bin/cygpcre-1.dll ${HOME}/Irssi/bin/
+
+
