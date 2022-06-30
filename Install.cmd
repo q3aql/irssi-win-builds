@@ -1,6 +1,6 @@
 @echo off
 
-set VERSION=1.2.2
+set VERSION=1.4.1
 echo.
 echo  ####################################
 echo  # Welcome to Irssi installer %VERSION% #
