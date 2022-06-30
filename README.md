@@ -8,8 +8,8 @@ Irssi builds for Windows (on Cygwin without perl).
     * [irssi-1.4.1-win-64bit-build1.7z](https://github.com/q3aql/irssi-win-builds/releases/download/v1.4.1/irssi-1.4.1-win-64bit-build1.7z)
 
   * **Source code:**
-    * [irssi-1.4.1.tar.xz](https://github.com/q3aql/irssi-win-builds/releases/download/v1.2.2/irssi-1.2.2.tar.xz)
-    * [irssi-1.4.1.tar.gz](https://github.com/q3aql/irssi-win-builds/releases/download/v1.2.2/irssi-1.2.2.tar.gz)
+    * [irssi-1.4.1.tar.xz](https://github.com/q3aql/irssi-win-builds/releases/download/v1.4.1/irssi-1.4.1.tar.xz)
+    * [irssi-1.4.1.tar.gz](https://github.com/q3aql/irssi-win-builds/releases/download/v1.4.1/irssi-1.4.1.tar.gz)
 
 ### How to use:
 
