@@ -1,15 +1,15 @@
 Irssi builds for Windows (on Cygwin without perl). 
 ==================================================
 
-### Irssi 1.2.2 builds:
+### Irssi 1.4.1 builds:
 
   * **Windows downloads:**
-    * [irssi-1.2.2-win-32bit-build1.7z](https://github.com/q3aql/irssi-win-builds/releases/download/v1.2.2/irssi-1.2.2-win-32bit-build1.7z)
-    * [irssi-1.2.2-win-64bit-build1.7z](https://github.com/q3aql/irssi-win-builds/releases/download/v1.2.2/irssi-1.2.2-win-64bit-build1.7z)
+    * [irssi-1.4.1-win-32bit-build1.7z](https://github.com/q3aql/irssi-win-builds/releases/download/v1.4.1/irssi-1.4.1-win-32bit-build1.7z)
+    * [irssi-1.4.1-win-64bit-build1.7z](https://github.com/q3aql/irssi-win-builds/releases/download/v1.4.1/irssi-1.4.1-win-64bit-build1.7z)
 
   * **Source code:**
-    * [irssi-1.2.2.tar.xz](https://github.com/q3aql/irssi-win-builds/releases/download/v1.2.2/irssi-1.2.2.tar.xz)
-    * [irssi-1.2.2.tar.gz](https://github.com/q3aql/irssi-win-builds/releases/download/v1.2.2/irssi-1.2.2.tar.gz)
+    * [irssi-1.4.1.tar.xz](https://github.com/q3aql/irssi-win-builds/releases/download/v1.2.2/irssi-1.2.2.tar.xz)
+    * [irssi-1.4.1.tar.gz](https://github.com/q3aql/irssi-win-builds/releases/download/v1.2.2/irssi-1.2.2.tar.gz)
 
 ### How to use:
 
@@ -39,12 +39,12 @@ Irssi builds for Windows (on Cygwin without perl).
     * Libs/openssl-devel
     ````
 
-  * Download [irssi-1.2.2.tar.gz](https://github.com/q3aql/irssi-win-builds/releases/download/v1.2.2/irssi-1.2.2.tar.gz) and save it to `C:\Cygwin\home\<User>\`.
+  * Download [irssi-1.4.1.tar.gz](https://github.com/q3aql/irssi-win-builds/releases/download/v1.4.1/irssi-1.4.1.tar.gz) and save it to `C:\Cygwin\home\<User>\`.
   * Open a Cygwin terminal, and run the following commands:
   
     ```shell
-    $ tar zxvf irssi-1.2.2.tar.gz
-    $ cd irssi-1.2.2
+    $ tar zxvf irssi-1.4.1.tar.gz
+    $ cd irssi-1.4.1
     $ ./configure --with-proxy --with-bot --with-perl=no --prefix=/usr --enable-true-color
     $ make
     $ make install
