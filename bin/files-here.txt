@@ -1,19 +1,30 @@
 #!/bin/bash
 
-cp -rfv /usr/bin/irssi.exe ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/botti.exe ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/mintty.exe ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cygwin-console-helper.exe ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cygz.dll ${HOME}/Irssi/bin/
+# Copy necessary binaries for Cygwin/Windows version
+# After, you must copy all files to /bin directory
+mkdir -p ${HOME}/Irssi/bin/
+cd /usr/bin
+
+# All executables
+list_binary="bash irssi botti mintty cygwin-console-helper"
+
+echo "* Copying script bashbug"
+cp -rfv /usr/bin/bashbug ${HOME}/Irssi/bin/  
+for binary in ${list_binary} ; do
+  echo "* Copying binary ${binary}"
+  cp -rfv /usr/bin/${binary}.exe ${HOME}/Irssi/bin/
+  echo "* Searching dependencies for ${binary}"
+  ldd /usr/bin/${binary}.exe | grep "/bin/" | cut -d ">" -f 2 | cut -d "(" -f 1 | tr -s " " > /tmp/deps.txt
+  file_size=$(cat /tmp/deps.txt | wc -l)
+  file_scan=1
+  echo "* Copying dependencies for ${binary}"
+  while [ ${file_scan} -le ${file_size} ] ; do
+    library=$(cat /tmp/deps.txt | head -${file_scan} | tail -1)
+    cp -rfv ${library} ${HOME}/Irssi/bin/
+    file_scan=$(expr ${file_scan} + 1)
+  done
+done
+strip --strip-all ${HOME}/Irssi/bin/*
+cp -rfv /usr/bin/cyggcc_s-*.dll ${HOME}/Irssi/bin/
 cp -rfv /usr/bin/cygwin1.dll ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cyggmodule-2.0-0.dll ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cygcrypto-1.1.dll ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cygncursesw-10.dll ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cygglib-2.0-0.dll ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cygssl-1.1.dll ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cyggcc_s-1.dll ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cygiconv-2.dll ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cygintl-8.dll ${HOME}/Irssi/bin/
-cp -rfv /usr/bin/cygpcre-1.dll ${HOME}/Irssi/bin/
-
-
+cp -rfv /usr/bin/cygz.dll ${HOME}/Irssi/bin/
